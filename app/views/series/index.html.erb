@@ -1,0 +1,7 @@
+<h1>Series</h1>
+<ul>
+  <% @series.each do |series| %>
+    <li><%= series.name %> - Directed by: <%= series.director %></li>
+  <% end %>
+</ul>
+<%= link_to 'Add a new series', new_series_path %>

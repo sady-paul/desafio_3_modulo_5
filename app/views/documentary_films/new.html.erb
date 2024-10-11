@@ -1,0 +1,16 @@
+<h1>New DocumentaryFilms</h1>
+<%= form_with model: @DocumentaryFilms, local: true do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :synopsis %>
+    <%= form.text_area :synopsis %>
+  </div>
+  <div>
+    <%= form.label :director %>
+    <%= form.text_field :director %>
+  </div>
+  <%= form.submit "Create DocumentaryFilms" %>
+<% end %>
